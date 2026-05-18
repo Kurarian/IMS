@@ -1,0 +1,254 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+body{
+    background-color: #FAF9EE;
+    font-family: Arial;
+}
+
+.admin{
+    color: #6c6c6c;
+    font-weight: 800;
+    font-size: 2.2rem;
+    user-select: none;
+    margin-left: 1.5vw;
+}
+
+.table-container{
+    width: 60vw;
+    max-height: 55vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 35vw;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: #EEEEEE;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.096);
+    width: 100%;
+    margin: 0;
+}
+
+.table-container thead th{
+    position: sticky;
+    top: 0;
+    background-color: #DCCFC0;
+    color: black;
+    z-index: 2;
+}
+
+th, td{
+    padding: 0.5rem;
+    /* border-radius: 8px; */
+    text-align: left;
+    color: #000000;
+}
+
+tr:hover{
+    background-color: #A2AF9B;
+    transition: all 0.25s ease;
+}
+
+tr.selected{
+    background-color: #A2AF9B;
+}
+
+#searchInput{
+    position: absolute;
+    top: 3vh;
+    right: 5vw;
+    padding: 0.6rem;
+    background-color: #EEEEEE;
+    color: black;
+    width: 26vw;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+#selectedUser{
+    position: absolute;
+    top: 18vh;
+    left: 1.5vw;
+    width: 26vw;
+    height: 3rem;
+    font-size: 1.2rem;
+    border: 1px solid #bababa;
+    border-radius: 8px;
+    background-color: #EEEEEE;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    padding: 0.6rem;
+}
+
+#passwordInput{
+    position: absolute;
+    top: 25vh;
+    left: 1.5vw;
+    width: 26vw;
+    height: 3rem;
+    font-size: 1.2rem;
+    border: 1px solid #bababa;
+    border-radius: 8px;
+    background-color: #EEEEEE;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    padding: 0.6rem;
+}
+
+.popup{
+    position: fixed;
+    top: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #A2AF9B;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    font-weight: bold;
+    font-size: 1.1rem;
+    z-index: 9999;
+    opacity: 0.95;
+}
+
+.popup.error{ background-color: #D9534F; }
+.popup.success{ background-color: #5CB85C; }
+
+.btn_add{
+    position: absolute;
+    top: 33vh;
+    left: 5vw;
+    width: 8vw;
+}
+
+.btn_admin{
+    position: absolute;
+    top: 75vh;
+    right: 34vw;
+    width: 9vw;
+}
+
+.btn_Power{
+    position: absolute;
+    top: 75vh;
+    right: 56vw;
+    width: 10vw;
+}
+
+.btn_UnPower{
+    position: absolute;
+    top: 75vh;
+    right: 44vw;
+    width: 11vw;
+}
+
+.btn_Archive{
+    position: absolute;
+    top: 3vh;
+    right: 55vw;
+    width: 8vw;
+}
+
+.btn_block{
+    position: absolute;
+    top: 75vh;
+    right: 15vw;
+    width: 8vw;
+}
+
+.btn_unAdmin{
+    position: absolute;
+    top: 75vh;
+    right: 24vw;
+    width: 9vw;
+}
+
+.btn_unblock{
+    position: absolute;
+    top: 75vh;
+    right: 6vw;
+    width: 8vw;
+}
+
+#panel_Ret{
+    position: absolute;
+    top: 3vh;
+    right: 44vw;
+    width: 10vw;
+}
+
+#sortBtn{
+    position: absolute;
+    top: 3vh;
+    right: 32vw;
+    width: 11vw;
+}
+
+#logout{
+    position: absolute;
+    top: 33vh;
+    left: 15vw;
+    width: 8vw;
+}
+
+.btn_add,
+.btn_admin,
+.btn_Power,
+.btn_UnPower,
+.btn_Archive,
+.btn_block,
+.btn_unAdmin,
+.btn_unblock,
+.btn_logbook,
+#panel_Ret,
+#sortBtn,
+#logout{
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: #A2AF9B;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
+.btn_add:hover,
+.btn_admin:hover,
+.btn_Power:hover,
+.btn_UnPower:hover,
+.btn_Archive:hover,
+.btn_block:hover,
+.btn_unAdmin:hover,
+.btn_unblock:hover,
+.btn_logbook:hover,
+#panel_Ret:hover,
+#sortBtn:hover,
+#logout:hover{
+    background-color: #899582;
+    color: white;
+    transition: all 0.25s ease;
+}
+
+.table-container::-webkit-scrollbar{
+    width: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb{
+    background-color: #A2AF9B;
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-track{
+    background-color: #e0e0e0;
+}
+
+.btn_logbook{
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
+    width: 8vw;
+}

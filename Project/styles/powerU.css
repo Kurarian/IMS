@@ -1,0 +1,196 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+body{
+    background-color: #FAF9EE;
+    font-family: Arial;
+    overflow: hidden;
+}
+
+.admin{
+    color: #6c6c6c;
+    font-weight: 800;
+    font-size: 2rem;
+    user-select: none;
+    margin-left: 1.25rem;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: #EEEEEE;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 6.25rem;
+    margin: 0;
+}
+
+.table-container thead th{
+    position: sticky;
+    top: 0;
+    background-color: #DCCFC0;
+    color: black;
+    z-index: 2;
+}
+
+.table-container{
+    width: 60%;
+    max-height: 55vh;
+    overflow-y: auto;
+    margin-left: 35%;
+}
+
+th, td{
+    padding: 0.6rem;
+    text-align: left;
+    color: #000000;
+}
+
+th{
+    background-color: #DCCFC0;
+}
+
+tr:hover{
+    background-color: #A2AF9B;
+    transition: all 0.25s ease;
+}
+
+tr.selected{
+    background-color: #A2AF9B;
+}
+
+.btn_add,
+.btn_unblock{
+    margin-top: 1.25rem;
+    border: 2px solid #333;
+    border-radius: 0.3rem;
+    background-color: #A2AF9B;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+    padding: 0.6rem 1.25rem;
+}
+
+#selectedUser{
+    position: absolute;
+    top: 18vh;
+    left: 4vw;
+    width: 26vw;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 0.3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+}
+
+#passwordInput{
+    position: absolute;
+    top: 27vh;
+    left: 4vw;
+    width: 26vw;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 0.3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+}
+
+.btn_add{
+    position: absolute;
+    top: 36vh;
+    left: 11vw;
+    width: 13vw;
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.btn_unblock{
+    position: absolute;
+    top: 70vh;
+    left: 70vw;
+    width: 12vw;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+#searchInput{
+    position: absolute;
+    top: 3vh;
+    right: 7vw;
+    padding: 0.5rem;
+    background-color: #EEEEEE;
+    color: black;
+    width: 26vw;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.btn_block{
+    background-color: #A2AF9B;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+    border: 2px solid #333;
+    border-radius: 0.3rem;
+    padding: 0.6rem 1.25rem;
+    width: 12vw;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 70vh;
+    left: 49vw;
+}
+
+#logout{
+    background-color: #A2AF9B;
+    box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.15);
+    border: 2px solid #333;
+    border-radius: 0.3rem;
+    padding: 0.6rem 1.25rem;
+    width: 11vw;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 7vh;
+    left: 3vw;
+}
+
+.SortUser{
+    position: absolute;
+    top: 5vh;
+    left: 57vw;
+    width: 12vw;
+    height: 2rem;
+    background-color: #A2AF9B;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+    border: 2px solid #333;
+    border-radius: 0.3rem;
+    padding: 0.6rem 0.3rem;
+    font-weight: bolder;
+}
+
+.SortUser:hover{
+    background-color: #899582;
+    transition: all 0.25s ease;
+    color: white;
+}
+
+.btn_block:hover,
+.btn_unblock:hover{
+    background-color: #899582;
+    transition: all 0.25s ease;
+    color: white;
+}
+
+.table-container::-webkit-scrollbar{
+    width: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb{
+    background-color: #A2AF9B;
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-track{
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+
+body {
+  background-color: #d9d9d9;
+}
+
+.container_card {
+  background: white;
+  border-radius: 12px;
+  width: 700px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.cover-image {
+  height: 260px;
+  background-image: url("../image/bg.jpg");
+  user-select: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-content {
+  position: relative;
+  text-align: center;
+  user-select: none;
+  padding-top: 70px;
+}
+
+.pro-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  user-select: none;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  isolation: isolate;
+}
+
+.wrapper {
+  height: 130px;
+  width: 130px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -65px;                         
+  left: 50%;
+  transform: translate(-65px, -35px);
+}
+
+.dropdown-container {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  z-index: 9999;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown summary.avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;               
+  object-fit: cover;                 
+  display: block;
+}
+
+.dropdown ul {
+  position: absolute;
+  top: 55px;                       
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  min-width: 100px;
+}
+
+.dropdown ul li {
+  list-style: none;
+}
+
+.dropdown ul li a {
+  display: block;
+  padding: 12px 15px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.15s ease;            
+}
+
+.dropdown ul li a:hover {
+  background: #f0f0f0;                
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown ul li.divider {
+  border-top: 1px solid #ccc;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #cfcfc6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #a8b5a2;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #8fa08a;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  background-color: #b7b6ae;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+.Dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.sale,
+.exp,
+.stock,
+.total {
+  width: 220px;
+  height: 120px;
+  background-color: #f3f1e8;
+  border-radius: 20px;
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999999;
+}
+
+.modal_container {
+    background: #fff;
+    padding: 30px;
+    width: 380px;
+    max-width: 90%;
+
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+    position: relative;
+    z-index: 1000000;
+}
+
+.modal_container h2 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.modal_container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.passwordWrap {
+    margin-bottom: 15px;
+}
+
+.passwordWrap input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.passwordWrap input:focus {
+    border-color: #414141;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.change {
+    width: 100%;
+    padding: 10px;
+    background: #90ee90;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.change:hover {
+    background: #27ae60;
+    color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.toggle-password {
+    position: absolute;
+    right: 3rem;
+    top: 7.8rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black;
+    font-size: 1.1rem;
+    user-select: none;
+    transition: opacity 0.2s ease;
+}
+
+.toggle-password:hover {
+    opacity: 0.4;
+}
+
+.toggle-passwords {
+    position: absolute;
+    right: 3rem;
+    top: 11.2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black;
+    font-size: 1.1rem;
+    user-select: none;
+    transition: opacity 0.2s ease;
+}
+
+.toggle-passwords:hover {
+    opacity: 0.4;
+}

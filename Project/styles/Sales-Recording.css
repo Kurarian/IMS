@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #cfcfc6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #a8b5a2;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #8fa08a;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  background-color: #b7b6ae;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+.record-info {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.record-info td {
+    padding: 8px 10px;
+}
+
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.sales-table th {
+    background-color: #9faa95;
+    padding: 10px;
+    text-align: left;
+}
+
+.sales-table td {
+    padding: 8px;
+}
+
+.sales-table input {
+    width: 100%;
+}
+
+input, textarea {
+    padding: 6px;
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+
+.remarks {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 300px;
+    resize: none;
+}
+
+.up-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.up-button button {
+  padding: 10px 10px;
+  border-radius: 30px;
+  border: 1px solid #999;
+  background-color: white;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.up-button button:hover {
+  background-color: #dcdcdc;
+}
+
+/* Add these to your existing CSS */
+
+.sales-table input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.sales-table input[readonly] {
+    background-color: #eee; /* Grey out the Amount field */
+    cursor: not-allowed;
+}
+
+.sales-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Make the Add Item button look better */
+button[onclick="addRow()"] {
+    padding: 8px 15px;
+    background-color: #9faa95;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[onclick="addRow()"]:hover {
+    background-color: #8fa08a;
+}

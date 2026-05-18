@@ -1,0 +1,331 @@
+p{
+    font-family: Arial, sans-serif;
+    font-size: large;
+}
+
+.Modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;          
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.container_modal {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 90%;
+    margin: 10px 0;
+}
+
+#new_password, #confirm_password{
+    font-size: large;
+}
+
+#confirm_password{
+    position: relative;
+    bottom: -3vh;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; 
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+
+.toggle-confirm-password {
+    position: absolute;
+    left: 449px;
+    top: 5vh;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+
+.Change{
+    position: absolute; bottom: 35vh; left: 95vh;
+    margin-top: 20px;
+    background-color: #A2AF9B;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px 20px;  
+    
+    width: 200px;
+    font-weight: bolder;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.Change:hover{
+    background-color: #899582;
+    transition: all 0.25s ease;
+    color: white;
+}
+
+
+
+.Logon{
+    position: absolute;
+    width: 400px;
+    height: 90px;
+
+    margin-left: 800px;
+
+    background-color: #A2AF9B;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+
+
+body{
+    background-color: #FAF9EE;
+    font-family: Arial;
+}
+
+h1{
+    color: #6c6c6c;
+    font-weight: 800;
+    font-size: 100px;
+    user-select: none;
+    margin-left: 750px;
+    
+}
+
+ .Logon:hover{
+    background-color: #899582;
+    transition: all 0.25s ease;
+    color: white;
+}
+
+.toggle-password {
+    position: absolute;
+    left: 450px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    user-select: none;
+    transition: opacity 0.2s ease; 
+}
+
+
+.dropdown-container {
+    position: fixed;
+    top: 60px;     
+    right: 60px;   
+    z-index: 999;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.dropdown summary.avatar img {
+    position: absolute;
+    top: -25vh;
+    left: 200vh;
+    width: 80px;
+    height: 80px;
+    border-radius: 13px;
+    display: block;
+}
+
+.dropdown ul {
+    position: absolute;
+    top: -14.5vh;
+    left: 188vh;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    min-width: 200px;
+    z-index: 100;
+}
+
+.dropdown ul li {
+    list-style: none;
+}
+
+.dropdown ul li p {
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.dropdown ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown ul li a:hover {
+    background: #f2f2f2;
+}
+
+.dropdown ul li.divider {
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+.dropdown ul li:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.block {
+    display: block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+.info-wrapper {
+    position: relative;
+    right: 10px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.info-wrapper input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    font-size: large;
+}
+
+.gender-group {
+    width: 80%;
+    margin: 15px auto;
+    text-align: left;
+}
+
+.gender-group label {
+    margin-right: 15px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.save{
+    position: absolute; bottom: 34vh; left: 96vh;
+    margin-top: 20px;
+    background-color: #A2AF9B;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px 20px;  
+    
+    width: 200px;
+    font-weight: bolder;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.save:hover{
+    background-color: #899582;
+    transition: all 0.25s ease;
+    color: white;
+}
+
+.container_card {
+    background: white;
+    border-radius: 12px;
+    width: 700px;
+    height: 600px;
+    overflow: hidden;
+}
+
+
+.cover-image {
+    height: 260px;
+    background-image: url("image/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-content {
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.pro-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid white;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+}
+
+.close{
+    position: absolute; top: 26vh; left: 26.5vh;
+    margin-top: 20px;
+    background-color: #A2AF9B;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px 20px;  
+    
+    width: 200px;
+    font-weight: bolder;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.close:hover{
+    background-color: #899582;
+    transition: all 0.25s ease;
+    color: white;
+}
+
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}

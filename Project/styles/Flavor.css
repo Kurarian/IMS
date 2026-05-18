@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #cfcfc6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #a8b5a2;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #8fa08a;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  background-color: #b7b6ae;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+.product-wrapper {
+  background-color: #e6e6e0;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  min-width: 600px;
+}
+
+.menu {
+  background-color: #f4f4f0;
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu h2 {
+  margin-bottom: 10px;
+}
+
+.menu p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.menu img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+
+.menu-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.menu-buttons button {
+  padding: 6px 10px;
+  border-radius: 15px;
+  border: 1px solid #999;
+  background-color: white;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.menu-buttons button:hover {
+  background-color: #dcdcdc;
+}
+
+/* Modal background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}

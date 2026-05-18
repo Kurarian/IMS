@@ -1,0 +1,139 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: xx-large;
+}
+
+.h2{
+    font-size: xx-larger;
+    color: rgb(53, 53, 53);
+
+    position: relative;
+    top: 2.5vw;
+    left: 1.5vw;
+    
+}
+
+.p1{
+    position: absolute;
+    top: 5vw;
+    left: 2.7vw;
+}
+
+.product{
+    width: 10vw;
+    height: 13vw;
+
+    position: relative;
+    top: -2vw;
+    left: 15vw;
+
+    border-radius: 12.5px;
+}
+
+.p2{
+    position: absolute;
+    top: 10vw;    
+    left: 2.7vw;
+}
+
+
+.acts{
+    position: absolute;
+    top: 20vw;
+}
+
+.container{
+    width: 26vw;
+    height: 15vw;
+
+    border-radius: 25px;  
+    border: 1.5px solid rgba(0, 0, 0, 0.5);  
+    
+    background-color: rgb(255, 255, 255);
+
+    position: absolute;
+    left: 30px;
+    top: 100px;
+}
+
+.container:hover{
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.25);
+
+    transition: 0.50s ease;
+}
+
+/* Modal background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}

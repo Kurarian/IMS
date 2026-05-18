@@ -1,0 +1,153 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-color: #FAF9EE;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.login {
+    background-color: #EEEEEE;
+    padding: 1.25rem;
+    border-radius: 0.6rem;
+    flex-direction: column;
+    display: flex;
+    transition: all 0.7s ease;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2),
+                0 0.45rem 1.25rem rgba(0, 0, 0, 0.19);
+    border: 2px solid #333;
+    width: 18.75rem;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 150%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+h2 {
+    color: #6c6c6c;
+    font-weight: 800;
+    font-size: 2rem;
+    user-select: none;
+    position: relative;
+    top: 1.25rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin: 0.6rem 0;
+    padding: 0.6rem;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    background-color: #EEEEEE;
+    color: black;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logging {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1.9rem;
+}
+
+#SignUp {
+    color: rgb(23, 247, 2);
+    cursor: pointer;
+}
+
+#button {
+    padding: 0.3rem;
+    border: 2px solid #333;
+    border-radius: 0.6rem;
+    background-color: #A2AF9B;
+    box-shadow: 0 0 0.9rem rgba(255, 255, 255, 0.2);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 6.5rem;
+}
+
+#button:hover {
+    background-color: #899582;
+    transition: all 0.25s ease;
+    color: white;
+}
+
+#reset {
+    padding: 0.6rem;
+    border: 2px solid #333;
+    border-radius: 0.6rem;
+    background-color: #A2AF9B;
+    box-shadow: 0 0 0.9rem rgba(255, 255, 255, 0.2);
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 6.5rem;
+    margin-right: 9.4rem;
+}
+
+#reset:hover {
+    background-color: #899582;
+    transition: all 0.25s ease;
+    color: white;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 2.5rem;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black;
+    font-size: 1.1rem;
+    user-select: none;
+    transition: opacity 0.2s ease;
+}
+
+.toggle-password:hover {
+    opacity: 0.4;
+}
+
+.login:hover {
+    transition: all 0.4s ease;
+    box-shadow: 0.5rem 0.6rem 0.75rem rgba(0, 0, 0, 0.2);
+}
